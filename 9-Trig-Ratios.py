@@ -25,6 +25,7 @@ class TrigFunc: # Making a class for the whole script
                 answer = sin_rad * int(number) # Multiplying the radian by the number
                 answer_round = round(answer, 2) # Rounding the answer to 2 decimal places
                 print("Answer: {}".format(answer_round)) # Prints ROUNDED answer
+                exit = input("Press enter to exit")
             elif sin_frac == "D" or sin_frac == "d": # If the number is the denominator
                 div_number = input("Number: ") # Getting input for the number
 
@@ -32,6 +33,7 @@ class TrigFunc: # Making a class for the whole script
                 div_rounded_answer = round(div_answer, 2) # Rounds the answer to 2 decimal places
 
                 print("Answer: {}".format(div_rounded_answer)) # Prints ROUNDED answer
+                exit = input("Press enter to exit")
 
     def CAH(): # Cos function
         cos_deg = input("Degrees: ") # Getting input for degrees
@@ -52,6 +54,7 @@ class TrigFunc: # Making a class for the whole script
                 cos_answer = cos_rad * int(cos_number) # Multiplying radian by the number
                 cos_answer_round = round(cos_answer, 2) # Rounding the answer to 2 decimal places
                 print("Answer: {}".format(cos_answer_round)) # Prints the ROUNDED answer
+                exit = input("Press enter to exit")
 
             elif cos_frac == "D" or cos_frac == "d": # If the variable is the denominator
                 div_cos = input("Number: ") # Getting input for the number
@@ -59,6 +62,7 @@ class TrigFunc: # Making a class for the whole script
                 div_cos_answer = div_cos / math.cos(math.radians(int(cos_deg))) # Dividing the number by the cos of the degrees
                 div_rounded_cos_answer = round(div_cos_answer, 2) # Rounding the answer to 2 decimal places
                 print("Answer: {}".format(div_rounded_cos_answer)) # Prints ROUNDED answer
+                exit = input("Press enter to exit")
 
     def TOA(): # Tan function
         toa_deg = input("Degrees: ") # Getting put for degrees
@@ -79,6 +83,7 @@ class TrigFunc: # Making a class for the whole script
                 toa_answer = toa_rad * int(toa_number) # Multiplying the radian by the number
                 toa_answer_round = round(toa_answer, 2) # Rounding the answer to 2 decimal places
                 print("Answer: {}".format(toa_answer_round)) # Prints ROUNDED answer
+                exit = input("Press enter to exit")
 
             elif toa_frac == "D" or toa_frac == "d": # If the variable is the denominator
                 div_toa = input("Number: ") # Getting input for number
@@ -86,6 +91,7 @@ class TrigFunc: # Making a class for the whole script
                 div_toa_answer = div_toa / math.tan(math.radians(int(toa_deg))) # Dividing the number by the tan of the degrees
                 div_rounded_toa_answer = round(div_toa_answer, 2) # Rounding the answer to 2 decimal places
                 print("Answer: {}".format(div_rounded_toa_answer)) # Prints ROUNDED answer
+                exit = input("Press enter to exit")
 
     if trig_ratio == 'SOH': # If the ratio type is SOH
         SOH() # Call the SOH function
