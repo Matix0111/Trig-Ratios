@@ -89,10 +89,19 @@ class TrigFunc: # Making a class for the whole script
                 print("Answer: {}".format(div_rounded_toa_answer)) # Prints ROUNDED answer
 
     def CSOH(): # COSINE Sin function
-        print("When inputting your fraction, use a / in between your variable or value and cosine value")
+        print("When inputting your fraction, use a / in between your variable or value and number")
         print("EXAMPLE: 6/sin12")
         cosine_frac1 = input("1st fraction: ")
-        cosine_frac2 = input("2nd fraction: ") 
+        cosine_frac2 = input("2nd fraction: ")
+
+    def CCAH(): # COSINE Cos function
+        CCAH_side_1 = input("First side: ")
+        CCAH_side_2 = input("Second side: ")
+        CCAH_angle = input("Angle: ")
+
+        Equation = int(CCAH_side_1)**2 + int(CCAH_side_2)**2 - 2(int(CCAH_side_1))*(int(CCAH_side_2))*math.sin(math.radians(int(CCAH_angle)))
+
+        print("ANSWER: {}".format(Equation))
 
     if trig_ratio == 'SOH': # If the ratio type is SOH
         SOH() # Call the SOH function
@@ -100,8 +109,10 @@ class TrigFunc: # Making a class for the whole script
         CAH() # Call the CAH function
     elif trig_ratio == 'TOA': # If the ratio type is TOA
         TOA() # Call the TOA function
-    elif trig_ratio == 'CSOH':
-        CSOH()
+    elif trig_ratio == 'CSOH': # If the ratio type is CSOH
+        CSOH() # Call the CSOH function
+    elif trig_ratio == 'CCAH': # If the ration type is CCAH
+        CCAH() # Call the CCAH function
     else: # If the ratio type is anything but the available options
         print("This is an invalid option, please relaunch program") # Notify of invalid option
 
